@@ -255,9 +255,9 @@ img {
 
 /* section Our ideals and values + our team*/
 
-.values-title {
+/* .values-title {
   visibility: hidden;
-}
+} */
 
 .values-list {
   display: flex;
@@ -275,7 +275,6 @@ img {
   height: 112px;
   border-radius: 4px;
   background-color: var(--light-color);
-  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -371,6 +370,10 @@ img {
 
 /* Customer */
 
+.customer {
+  padding-top: 130px;
+}
+
 .customer-title {
   margin: 0;
   margin-bottom: 72px;
@@ -384,6 +387,20 @@ img {
   color: var(--dark-color);
 }
 
+.customer-list {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  column-gap: 24px;
+}
+
+.custumer-item {
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--subtle-text-color);
+  border-radius: 4px;
+}
+
 /* End Customer*/
 
 /* footer */
@@ -392,6 +409,10 @@ img {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--dark-color);
+}
+
+.footer-container {
+  display: flex;
 }
 
 .footer .logo-studio {
@@ -406,7 +427,63 @@ img {
   line-height: 1.5;
 }
 
-/* END INDEX */
+.footer-social {
+  margin-left: 120px;
+  width: 208px;
+  outline: 1px solid white;
+}
+
+.footer .social-text {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: var(--hero-title-color);
+}
+
+.footer-social-list {
+  display: flex;
+  column-gap: 16px;
+}
+
+.footer .social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.footer .social-link.instagram {
+  background-image: url(../images/instagram-2-\(1\).svg);
+}
+
+.footer .social-link.twitter {
+  background-image: url(../images/twitter-1-\(1\).svg);
+}
+.footer .social-link.facebook {
+  background-image: url(../images/facebook-1-\(1\).svg);
+}
+
+.footer .social-link.linkedin {
+  background-image: url(../images/linkedin-1-\(1\).svg);
+}
+
+.footer .social-link:hover,
+.footer .social-link:focus {
+  background-color: var(--success-color);
+}
+
+/* END footer */
+
+/*  */
+/* END PAGE INDEX */
 /*  */
 /*  */
 /*  */
@@ -436,6 +513,7 @@ img {
   display: block;
   color: var(--primary-brand-color);
   background-color: var(--light-color);
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
