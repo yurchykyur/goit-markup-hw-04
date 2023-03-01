@@ -160,7 +160,23 @@ img {
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
+}
+
+.overlay {
+  max-width: 1440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/backgroung-hero-2.jpg');
   background-color: var(--hero-background-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
@@ -252,6 +268,34 @@ img {
   flex-basis: calc((100% - 3 * var(--values-text-margin-column) / 4));
 }
 
+.values-list .item::before {
+  display: block;
+  content: '';
+  margin-bottom: 8px;
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--light-color);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/icon-antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/icon-clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/icon-diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/icon-astronaut.svg);
+}
+
 .section .value-subtitle {
   margin-top: 0;
   padding: 0;
@@ -324,6 +368,23 @@ img {
   line-height: 1.5;
   text-align: center;
 }
+
+/* Customer */
+
+.customer-title {
+  margin: 0;
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: var(--dark-color);
+}
+
+/* End Customer*/
 
 /* footer */
 
