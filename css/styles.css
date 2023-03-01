@@ -445,16 +445,18 @@ img {
   color: var(--hero-title-color);
 }
 
-.footer-social-list {
+.footer .social-list {
   display: flex;
   column-gap: 16px;
 }
 
 .footer .social-link {
-  display: inline-block;
+  display: block;
   width: 40px;
   height: 40px;
+
   background-color: rgba(255, 255, 255, 0.1);
+  background-size: 24px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
