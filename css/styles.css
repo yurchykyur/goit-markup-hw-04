@@ -176,7 +176,7 @@ img {
     ),
     url('../images/backgroung-hero-2.jpg');
   background-color: var(--hero-background-color);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -197,6 +197,7 @@ img {
   border: 1px solid transparent;
 }
 /* Hero  button */
+
 .button.primary {
   border-radius: 4px;
   padding: 16px 32px 16px 32px;
@@ -304,7 +305,7 @@ img {
   background-image: url(../images/icon-antenna.svg);
 } */
 
-.icon-clock::before {
+/* .icon-clock::before {
   background-image: url(../images/icon-clock.svg);
 }
 
@@ -314,7 +315,7 @@ img {
 
 .icon-astronaut::before {
   background-image: url(../images/icon-astronaut.svg);
-}
+} */
 
 .section .value-subtitle {
   margin-top: 0;
@@ -407,8 +408,8 @@ img {
 }
 
 .team .social-link .icon {
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
 }
 
 .team .social-link:hover,
@@ -442,11 +443,11 @@ img {
   column-gap: 24px;
 }
 
-.custumer-item {
+/* .custumer-item {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .customer-link {
   display: flex;
@@ -502,7 +503,6 @@ img {
 
 .footer-social {
   margin-left: 120px;
-  width: 208px;
 }
 
 .footer .social-text {
@@ -612,14 +612,21 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-examples > .item:hover {
+/* .portfolio-examples > .item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+} */
+
+.list .portfolio-link {
+  display: block;
+  text-decoration: none;
+}
+
+.portfolio-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.list .portfolio-link {
-  text-decoration: none;
-}
 .examples-content {
   padding: 32px 0 32px 16px;
   border-right: 1px solid var(--accent-color);
@@ -641,14 +648,14 @@ img {
   letter-spacing: 0.02em;
 }
 
-.list .portfolio-subtitle:hover,
+/* .list .portfolio-subtitle:hover,
 .list .portfolio-subtitle:focus,
 .list .portfolio-text:hover,
 .list .portfolio-text:focus {
   color: var(--pressed-state-color);
-}
+} */
 
-.list .portfolio-link:hover,
+/* .list .portfolio-link:hover,
 .list .portfolio-link:focus {
   color: var(--pressed-state-color);
-}
+} */
