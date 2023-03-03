@@ -209,15 +209,18 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 .button.primary:hover,
 .button.primary:focus {
   background-color: var(--pressed-state-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-/* End Hero button */
+/*----------------- End Hero button -------------*/
 
-/* sections */
+/*------------------- sections -------------------*/
 
 /* .section.no-padding {
   padding-top: 0;
@@ -255,7 +258,7 @@ img {
   text-transform: capitalize;
 }
 
-/* section Our ideals and values + our team*/
+/*----------- section Our ideals and values + our team ----------*/
 
 /* .values-title {
   visibility: hidden;
@@ -270,7 +273,23 @@ img {
   flex-basis: calc((100% - 3 * var(--values-text-margin-column) / 4));
 }
 
-.values-list .item::before {
+.values-list .item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  height: 112px;
+
+  border-radius: 4px;
+  background-color: var(--light-color);
+}
+
+.values-list .item-icon .icon {
+  width: 64px;
+  height: 64px;
+}
+
+/* .values-list .item::before {
   display: block;
   content: '';
   margin-bottom: 8px;
@@ -279,11 +298,11 @@ img {
   background-color: var(--light-color);
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
-.icon-antenna::before {
+/* .icon-antenna::before {
   background-image: url(../images/icon-antenna.svg);
-}
+} */
 
 .icon-clock::before {
   background-image: url(../images/icon-clock.svg);
@@ -364,13 +383,40 @@ img {
 }
 
 .section .team-text {
-  margin: 0;
+  margin: 0 0 8px 0;
   letter-spacing: 0.02em;
   line-height: 1.5;
   text-align: center;
 }
 
-/* Customer */
+.team .team-social-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+.team .social-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--primary-brand-color);
+  border-radius: 50%;
+}
+
+.team .social-link .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.team .social-link:hover,
+.footer .social-link:focus {
+  background-color: var(--pressed-state-color);
+}
+
+/*--------------- Customer ----------------*/
 
 .customer {
   padding-top: 130px;
@@ -397,13 +443,38 @@ img {
 }
 
 .custumer-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 168px;
   height: 88px;
   border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
 }
 
-/* End Customer*/
+.customer-link .icon {
+  width: 104px;
+  height: 56px;
+  fill: var(--subtle-text-color);
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  border-color: var(--pressed-state-color);
+}
+
+.customer-link:hover .icon,
+.customer-link:focus .icon {
+  fill: var(--pressed-state-color);
+}
+
+/*-------------- End Customer*/
 
 /* footer */
 
@@ -452,30 +523,19 @@ img {
 }
 
 .footer .social-link {
-  display: block;
+  display: flex;
   width: 40px;
   height: 40px;
+  justify-content: center;
+  align-items: center;
 
   background-color: rgba(255, 255, 255, 0.1);
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 50%;
 }
 
-.footer .social-link.instagram {
-  background-image: url(../images/instagram-2-\(1\).svg);
-}
-
-.footer .social-link.twitter {
-  background-image: url(../images/twitter-1-\(1\).svg);
-}
-.footer .social-link.facebook {
-  background-image: url(../images/facebook-1-\(1\).svg);
-}
-
-.footer .social-link.linkedin {
-  background-image: url(../images/linkedin-1-\(1\).svg);
+.footer .social-link .icon {
+  width: 24px;
+  height: 24px;
 }
 
 .footer .social-link:hover,
@@ -552,6 +612,11 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.portfolio-examples > .item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .list .portfolio-link {
   text-decoration: none;
 }
@@ -586,6 +651,4 @@ img {
 .list .portfolio-link:hover,
 .list .portfolio-link:focus {
   color: var(--pressed-state-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
